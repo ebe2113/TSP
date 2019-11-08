@@ -21,15 +21,8 @@
       Vertex initialVertex = findRandom(map); 
       System.out.println("hi" + initialVertex.name);
       
-      System.out.println("Start: " + initialVertex); 
-      for(Vertex v : map){
-          v.known= false; 
-      }
-      
-      initialVertex.known = true; 
-      findNeighbor(initialVertex, initialVertex, path); 
-      
-      return path; 
+      ****
+        *****
   }
   
   private void findNeighbor(Vertex initialV, Vertex startV, ArrayList<Edge> path){
@@ -73,11 +66,7 @@
   
 
   private Vertex findRandom(ArrayList<Vertex> currMap){
-      int x = (int)(Math.random()*(currMap.size())); 
-      while (x==currMap.size()){
-          x = (int)(Math.random()*(currMap.size()));
-      }
-      return currMap.get(x);   
+     ***** 
   }
 
   public List<Edge> bruteForceTsp() { 
@@ -100,11 +89,7 @@
   }
   
   private double getWeight(ArrayList<Edge> edges){
-      double weight = 0; 
-      for (Edge e : edges){ 
-          weight+= e.distance; 
-      }
-      return weight; 
+     *****
   }
     
   private void permute(ArrayList<ArrayList<Vertex>> total, ArrayList<Vertex> sub, int size){
